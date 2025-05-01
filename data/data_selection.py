@@ -211,7 +211,6 @@ if __name__ == "__main__":
 
     
     index_json_path = args.index_json_path
-    # data_dir = "/gscratch/simondu/qyang/verl/data/train/deepscaler"
     data_dir = args.data_dir
     parquet_file_path = f"{data_dir}/{args.parquet_file_name}"
 
