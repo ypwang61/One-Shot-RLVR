@@ -120,14 +120,10 @@ We have logged our experiments for three models to [this wandb project](https://
   
 ## Citation
 ```bibtex
-@misc{wang2025reinforcement,
-  title        = {Reinforcement Learning for Reasoning in Large Language Models with One Training Example},
-  author       = {Wang, Yiping and Yang, Qing and Zeng, Zhiyuan and Ren, Liliang and Liu, Lucas and Peng, Baolin and Cheng, Hao and He, Xuehai and Wang, Kuan and Gao, Jianfeng and Chen, Weizhu and Wang, Shuohang and Du, Simon Shaolei and Shen, Yelong},
-  year         = {2025},
-  eprint       = {2504.20571},
-  archivePrefix= {arXiv},
-  primaryClass = {cs.LG},
-  doi          = {10.48550/arXiv.2504.20571},
-  url          = {https://arxiv.org/abs/2504.20571}
+@article{wang2025reinforcement,
+  title={Reinforcement Learning for Reasoning in Large Language Models with One Training Example},
+  author={Wang, Yiping and Yang, Qing and Zeng, Zhiyuan and Ren, Liliang and Liu, Lucas and Peng, Baolin and Cheng, Hao and He, Xuehai and Wang, Kuan and Gao, Jianfeng and others},
+  journal={arXiv preprint arXiv:2504.20571},
+  year={2025}
 }
 ```
