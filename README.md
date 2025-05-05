@@ -21,9 +21,9 @@ Our training pipeline is adapted from [verl](https://github.com/volcengine/verl)
 conda create -y -n rlvr_train python=3.10
 conda activate rlvr_train
 pip install -e .
-pip3 install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu121
-pip3 install ray vllm==0.6.3
-pip3 install flash-attn --no-build-isolation
+pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu121
+pip install ray vllm==0.6.3
+pip install flash-attn --no-build-isolation
 pip install wandb matplotlib
 pip install huggingface_hub
 ```
