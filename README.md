@@ -3,7 +3,8 @@
 
 <div style="text-align: center;">
 <a href="https://ypwang61.github.io/">Yiping Wang</a>, <a href="https://www.linkedin.com/in/qing-yang-b3a02120b/">Qing Yang</a>, <a href="https://zhiyuan-zeng.github.io/">Zhiyuan Zeng</a>, <a href="https://renll.github.io/">Liliang Ren</a>, <a href="https://liyuanlucasliu.github.io/">Lucas Liu</a>, <a href="https://www.microsoft.com/en-us/research/people/baolinpeng/">Baolin Peng</a>, <a href="https://www.microsoft.com/en-us/research/people/chehao/">Hao Cheng</a>, <a href="https://sheehan1230.github.io/">Xuehai He</a>, <a href="https://github.com/kuan-wang">Kuan Wang</a>, <a href="https://www.microsoft.com/en-us/research/people/jfgao/">Jianfeng Gao</a>, <a href="https://www.microsoft.com/en-us/research/people/wzchen/">Weizhu Chen</a>, <a href="https://www.microsoft.com/en-us/research/people/shuowa/">Shuohang Wang*</a>, <a href="https://simonshaoleidu.com/">Simon Shaolei Du*</a>, <a href="https://www.linkedin.com/in/yelong-shen-84b0122b/">Yelong Shen*</a>
-<p>
+
+<br>
 
 <a href="https://arxiv.org/abs/2504.20571">
   <img src="https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white">
@@ -21,7 +22,7 @@
   <img src="https://img.shields.io/badge/X_Summary-000000?style=for-the-badge&logo=x&logoColor=white">
 </a>
 
-</p>
+
 </div>
 </div>
 
