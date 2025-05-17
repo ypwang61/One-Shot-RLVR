@@ -1,15 +1,33 @@
+<div align="center">
 <h1 style="text-align: center;">Reinforcement Learning for Reasoning in Large Language Models with One Training Example</h1>
 
 <div style="text-align: center;">
-<a href="https://ypwang61.github.io/">Yiping Wang</a>, <a href="https://www.linkedin.com/in/qing-yang-b3a02120b/">Qing Yang</a>, <a href="https://zhiyuan-zeng.github.io/">Zhiyuan Zeng</a>, <a href="https://renll.github.io/">Liliang Ren</a>, <a href="https://liyuanlucasliu.github.io/">Lucas Liu</a>, <a href="https://www.microsoft.com/en-us/research/people/baolinpeng/">Baolin Peng</a>, <a href="https://www.microsoft.com/en-us/research/people/chehao/">Hao Cheng</a>, <a href="https://sheehan1230.github.io/">Xuehai He</a>, <a href="https://github.com/kuan-wang">Kuan Wang</a>, <a href="https://www.microsoft.com/en-us/research/people/jfgao/">Jianfeng Gao</a>, <a href="https://www.microsoft.com/en-us/research/people/wzchen/">Weizhu Chen</a>, <a href="https://www.microsoft.com/en-us/research/people/shuowa/">Shuohang Wang</a>, <a href="https://simonshaoleidu.com/">Simon Shaolei Du</a>, <a href="https://www.linkedin.com/in/yelong-shen-84b0122b/">Yelong Shen</a>
+<a href="https://ypwang61.github.io/">Yiping Wang</a>, <a href="https://www.linkedin.com/in/qing-yang-b3a02120b/">Qing Yang</a>, <a href="https://zhiyuan-zeng.github.io/">Zhiyuan Zeng</a>, <a href="https://renll.github.io/">Liliang Ren</a>, <a href="https://liyuanlucasliu.github.io/">Lucas Liu</a>, <a href="https://www.microsoft.com/en-us/research/people/baolinpeng/">Baolin Peng</a>, <a href="https://www.microsoft.com/en-us/research/people/chehao/">Hao Cheng</a>, <a href="https://sheehan1230.github.io/">Xuehai He</a>, <a href="https://github.com/kuan-wang">Kuan Wang</a>, <a href="https://www.microsoft.com/en-us/research/people/jfgao/">Jianfeng Gao</a>, <a href="https://www.microsoft.com/en-us/research/people/wzchen/">Weizhu Chen</a>, <a href="https://www.microsoft.com/en-us/research/people/shuowa/">Shuohang Wang*</a>, <a href="https://simonshaoleidu.com/">Simon Shaolei Du*</a>, <a href="https://www.linkedin.com/in/yelong-shen-84b0122b/">Yelong Shen*</a>
 <p>
 
-<a href="https://arxiv.org/abs/2504.20571"><img src="https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white" alt="Paper"></a>
+<a href="https://arxiv.org/abs/2504.20571">
+  <img src="https://img.shields.io/badge/paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white">
+</a>
+<a href="https://huggingface.co/collections/ypwang61/one-shot-rlvr-6827f72c3359b2ffe75fc1a8">
+  <img src="https://img.shields.io/badge/Models/Dataset-fcd022?style=for-the-badge&logo=huggingface&logoColor=000">
+</a>
+<a href="https://github.com/ypwang61/One-Shot-RLVR">
+  <img src="https://img.shields.io/badge/Code-000000?style=for-the-badge&logo=github&logoColor=000&logoColor=white">
+</a>
+<a href="https://wandb.ai/yipingwanguw/verl_few_shot?nw=nwuseryipingwang22">
+  <img src="https://img.shields.io/badge/📁_W&B_LOGS-fcd022?style=for-the-badge&logo=wandb&logoColor=000">
+</a>
+<a href="https://x.com/ypwang61/status/1917596101953348000">
+  <img src="https://img.shields.io/badge/X_Summary-000000?style=for-the-badge&logo=x&logoColor=white">
+</a>
+
 </p>
+</div>
 </div>
 
 ## Updates
-* 30/04/2025: 🎉 We release our [paper](https://arxiv.org/abs/2504.20571), [code](https://github.com/ypwang61/One-Shot-RLVR), and [wandb records](https://wandb.ai/yipingwanguw/verl_few_shot?nw=nwuseryipingwang22).
+* 17/05/2025: We release our [checkpoints](https://huggingface.co/collections/ypwang61/one-shot-rlvr-6827f72c3359b2ffe75fc1a8) and [dataset](https://huggingface.co/datasets/ypwang61/one_shot_rlvr) in huggingface.
+* 30/04/2025: 🎉 We release our [paper](https://arxiv.org/abs/2504.20571), [code](https://github.com/ypwang61/One-Shot-RLVR), and [wandb records](https://wandb.ai/yipingwanguw/verl_few_shot?nw=nwuseryipingwang22). See the summarization of our work at [X(twitter)](https://x.com/ypwang61/status/1917596101953348000).
 
 
 ## Setup
