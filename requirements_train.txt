@@ -131,7 +131,7 @@ urllib3==2.4.0
 uvicorn==0.34.2
 uvloop==0.21.0
 vllm==0.6.3
-wandb==0.19.10
+wandb==0.20.0
 watchfiles==1.0.5
 websockets==15.0.1
 wheel==0.45.1
