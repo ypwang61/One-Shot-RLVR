@@ -107,7 +107,7 @@ Please change `data.train_files` and `trainer.experiment_name` in the training s
 
 ## Evaluation
 
-### Eval Scripts
+### Eval Scripts for Qwen Models
 To run evaluation for 1-shot RLVR with $\pi_1$ on 6 common math reasoning benchmarks (MATH500, AIME24, AMC23, Minerva Math, OlympiadBench, AIME25), we can follow the commands:
 ```bash
 conda activate rlvr_eval
@@ -116,6 +116,35 @@ bash sh/eval_one_experiment_all_ckpts.sh
 ```
 Here for AIME24, AMC23, and AIME25, we evaluate the pass@8 results.
 Please adjust the experiment name in `Qwen2.5-Eval/evaluation/sh/eval_one_experiment_all_ckpts.sh` when using other training examples. 
+
+
+### Evaluation for DeepSeek-R1-Distill-Qwen-1.5B
+
+For DeepSeek-R1-Distill-Qwen-1.5B, we can also evaluate based on [rllm(DeepScaleR)](https://github.com/agentica-project/rllm) official repo. As DeepSeek-R1 and DeepScaleR, we use `temperature=0.6` and `top_p=0.95` for evaluation, and use `avg@16` for MATH500, Minerva MAth & OlympiadBench, ang `avg@64` for AIME24, AIME25 and AMC23. Since our training length is 8192, we provide the evaluations results for both 8k and 32k evaluation length. The results can be reproduced by provided [checkpoints](https://huggingface.co/collections/ypwang61/one-shot-rlvr-6827f72c3359b2ffe75fc1a8). 
+
+#### Evaluation length = 8192
+| Model                                       | Training Length   | Evaluation Length | MATH 500 (avg@16) | AIME 2024 (avg@64) | AMC 2023 (avg@64) | Minerva Math (avg@16) | Olympiad Bench (avg@16) | AIME 2025 (avg@64) | Avg   |
+|---------------------------------------------|-------------------|-------------------|-------------------|--------------------|-------------------|-----------------------|-------------------------|--------------------|-------|
+| R1-Distill-1.5B                             | –                 | 8k                | 76.7              | 20.8               | 51.3              | 23.3                  | 35.4                    | 19.7               | 37.9  |
+| **1-shot** RLVR on R1-Distill-1.5B              | 8k                | 8k                | 80.5              | 25.1               | 58.9              | 27.2                  | 40.2                    | 21.7               | 42.3  |
+| **4-shot** RLVR on R1-Distill-1.5B              | 8k                | 8k                | 81.2              | 25.8               | 60.1              | 26.8                  | 40.4                    | 22.0               | 42.7  |
+| **16-shot** RLVR on R1-Distill-1.5B             | 8k                | 8k                | 83.3              | 29.6               | 64.8              | 29.3                  | 43.3                    | 22.8               | 45.5  |
+| 1.2k-shot (DSR-sub) RLVR on R1-Distill-1.5B | 8k                | 8k                | 84.4              | 30.2               | 68.3              | 29.2                  | 45.8                    | 26.7               | 47.4  |
+| DeepScaleR-1.5B-Preview (40k DSR data)      | 8k→16k→24k        | 8k                | 86.3              | 35.2               | 68.1              | 29.6                  | 46.7                    | 28.3               | 49.0  |
+
+
+#### Evaluation length = 32768
+
+| Model                                       | Training Length   | Evaluation Length | MATH 500 (avg@16) | AIME 2024 (avg@64) | AMC 2023 (avg@64) | Minerva Math (avg@16) | Olympiad Bench (avg@16) | AIME 2025 (avg@64) | Avg   |
+|---------------------------------------------|-------------------|-------------------|-------------------|--------------------|-------------------|-----------------------|-------------------------|--------------------|-------|
+| R1-Distill-1.5B                             | –                 | 32k               | 82.9              | 29.8               | 63.2              | 26.4                  | 43.1                    | 23.9               | 44.9  |
+| R1-Distill-1.5B (reported)                  | –                 | 32k               | 83.9              | 28.9               | –                 | –                     | –                       | –                  | –     |
+| **1-shot** RLVR on R1-Distill-1.5B              | 8k                | 32k               | 83.9              | 31.0               | 66.1              | 28.3                  | 44.6                    | 24.1               | 46.3  |
+| **4-shot** RLVR on R1-Distill-1.5B              | 8k                | 32k               | 84.8              | 32.2               | 66.6              | 27.7                  | 45.5                    | 24.8               | 46.9  |
+| **16-shot** RLVR on R1-Distill-1.5B             | 8k                | 32k               | 84.5              | 34.3               | 69.0              | 30.0                  | 46.9                    | 25.2               | 48.3  |
+| 1.2k-shot (DSR-sub) RLVR on R1-Distill-1.5B | 8k                | 32k               | 84.5              | 32.7               | 70.1              | 29.5                  | 46.9                    | 27.8               | 48.6  |
+| DeepScaleR-1.5B-Preview (40k DSR data)      | 8k→16k→24k        | 32k               | 87.6              | 41.4               | 73.2              | 30.6                  | 49.6                    | 31.3               | 52.3  |
+| DeepScaleR-1.5B-Preview (reported)          | 8k→16k→24k        | 32k               | 87.8              | 43.1 (avg@16)      | 73.6 (avg@16)     | 30.2 (avg@16)         | 50.0 (avg@16)           | –                  | –     |
 
 
 ## W&B
