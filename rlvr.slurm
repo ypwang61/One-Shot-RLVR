@@ -5,8 +5,8 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --time=24:00:00
-#SBATCH --output=/home/woody/iwi7/iwi7107h/one_shot_rlvr_pi1_4xa100_%j.out
-#SBATCH --error=/home/woody/iwi7/iwi7107h/one_shot_rlvr_pi1_4xa100_%j.err
+#SBATCH --output=/home/woody/iwi7/iwi7107h/One shot RLVR GIT/One-Shot-RLVR/outputs/one_shot_rlvr_%j.out
+#SBATCH --error=/home/woody/iwi7/iwi7107h/One shot RLVR GIT/One-Shot-RLVR/outputs/one_shot_rlvr_%j.err
 set -euo pipefail
 REPO_DIR="/home/woody/iwi7/iwi7107h/One shot RLVR GIT/One-Shot-RLVR"
 TRAIN_SCRIPT_REL="scripts/train/training_1.5b_pi1_r128.sh"
